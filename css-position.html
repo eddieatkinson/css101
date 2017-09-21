@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+	<style>
+		.static-box{
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			top: 100px; /*Will be ignored*/
+			left: 200px;  /*Will also be ignored*/
+			position: static; /*Already the default*/
+		}
+
+		.static p{
+			font-family: "Wendy One", sans-serif;
+		}
+
+		.relative{
+			position: relative;
+			z-index: 2;
+		}
+
+		.relative-box{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: relative;
+			bottom: 300px; /*This element is relative and will NOT be ignored*/
+			right: -100px; /*Will suck it from the right.*/
+		}
+
+		.fixed-box{
+			width: 100px;
+			height: 100px;
+			background-color: black;
+			position: fixed;
+			top: 200px; /*200 px from the TOP of the screen*/
+			left: 200px; /*200 px from the LEFT*/
+			z-index: 1; /*Will show up above stuff with position set and a
+			z-index below 1*/
+		}
+
+		.absolute{
+			position: relative; /*So the box has a parent to be absolute against*/
+			width: 300px;
+			border: 3px solid black;
+		}
+
+		.absolute-box{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			background-color: orange;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Position property has 4 options</h1>
+	<ol>
+		<li><a href="#static">Static</a></li>
+		<li><a href="#relative">Relative</a></li>
+		<li><a href="#fixed">Fixed</a></li>
+		<li><a href="#absolute">Absolute</a></li>
+	</ol>
+
+	<a name="static"></a>
+	<div class="static">
+		<h1>Static</h1>
+		<p>Static is the default position for the position property.</p>
+		<p>Top, bottom, left, and right do NOT work with static.</p>
+		<p>This element will show up, top and bottom, left and right. Nothing
+		special, and it can;t be moved.</p>
+		<div class="static-box">Static box</div>
+	</div>
+
+	<a name="relative"></a>
+	<div class="ralative">
+		<h1>Relative</h1>
+		<p>A relative position is the same as static (top to bottom, left to
+		right), EXCEPT you can move it with top, bottom, left, and right.</p>
+		<p>IF you move it, it will sit on top of other stuff and the rest of
+		the page will think it's still where "static" would be</p>
+		<div class="relative-box">Relative box</div>
+	</div>
+
+	<a name="fixed"></a>
+	<div class="fixed">
+		<h1>Fixed</h1>
+		<p>A fixed position element will remain relative to the viewport (screen).
+		Even if the user scrolls, the screen doesn't move, so the element
+		doesn't move either.</p>
+		<p>Use top, bottom, left, right to place the element</p>
+		<p>Unlike relative elements, it does not leave a gap, i.e., the rest of
+		the page (static, relative things) don't know it exists anymore.</p>
+		<div class="fixed-box">Fixed box</div>
+	</div>
+
+	<a name="absolute"></a>
+	<div class="absolute">
+		<h1>absolute</h1>
+		<p>Absolute position elements work off of the grid system. Just like
+		they are ignored by everyone. They can have a z-index. They do not
+		leave space/gaps.</p>
+		<p>The top, bottom, left, and right are determined by the first tag
+		up that has a position set.</p>
+		<div class="absolute-box">Absolute box</div>
+	</div>
+
+</body>
+</html>
