@@ -1,0 +1,17 @@
+body{
+}
+
+#google-wrapper{
+	text-align: center;
+	height: 100vh; /*Guarantees entire height of the viewport.*/
+	position: relative; /*So footer can be absolute.*/
+}
+
+ul, ol{
+	list-style: none;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+}

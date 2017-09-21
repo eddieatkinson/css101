@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float - makes no sense</title>
+
+	<style>
+		#container{
+			background-color: red;
+			border: 2px black solid;
+			color: white;
+			/*float: left;*/
+			overflow: hidden;
+			width: 80%;
+			margin: auto;
+
+		}
+
+		.left{
+			float: left;
+			width: 40%;
+			background-color: blue;
+		}
+
+		.right{
+			float: right;
+			width: 10%;
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- FLOAT:
+	1. A block level element no longer takes up the whole page. It's not inline,
+	it's not inline-block, it's not block...it's not even display, i.e., margin
+	will NOT be added.
+	2. The element will go as far left as it can until it runs into something else
+	floating in that direction, or it runs out of room.
+	3. a.Floated elements are in their own universe. They don't pass their height
+	up to their parents, unless their parents are also floating. You will get
+	odd behavior when static elements run into floated elements.
+	   b. To forceheight up:
+	 	1. Set the parent to float.
+	 	2. Overflow: hidden -->
+	<div id="container">
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="right">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+</body>
+</html>
