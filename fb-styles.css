@@ -1,9 +1,24 @@
-/*body{
-	background-color: blue;
-}*/
+body{
+	background-color: #E9EBEE;
+	font-family: system-ui, sans-serif;
+	/*font-size: 12px;*/
+}
+
+/*To reset the default where the links are blue and underlined:*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+ul,ol{
+	list-style: none;
+}
+
 #header{
 	height: 42px;
 	background-color: #4267B2;
+	font-size: 12px;
+	/*position: fixed;*/
 }
 
 .navbar{
@@ -11,12 +26,25 @@
 	margin: auto;
 }
 
+.navbar-left{
+	width: 50%;
+}
+
+.navbar-left, .navbar-right{
+	display: inline-block;
+}
+
+.navbar-left input{
+	width: 90%;
+	display: inline-block;
+}
+
 .fb-logo{
     background-image: url('https://www.facebook.com/rsrc.php/v3/ye/r/jNvmNEDilLw.png');
     background-repeat: no-repeat;
     background-size: 25px 626px;
     background-position: 0 -50px;
-    display: block;
+    display: inline-block;
     height: 24px;
     outline: none;
     overflow: hidden;
@@ -24,3 +52,94 @@
     white-space: nowrap;
     width: 24px;    
 }
+
+.navbar-right{
+	width: 48%;
+}
+
+/*The ">" will apply the rule ONLY to direct decendants of the parent class*/
+.navbar-right > div, .navbar-right li{
+	display: inline-block;
+}
+
+#content{
+	max-width: 900px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#content > div{
+	display: inline-block;
+	vertical-align: top; /*Because inline-block grows from the bottom.*/
+	/*background-color: #ddd;*/
+	min-height: 100vh;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.left-content{
+	width: 20%;
+}
+
+.profile-pic{
+	background-image: url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p40x40/12109177_10106816558658653_952277610320772292_n.jpg?oh=b45381c348ab098ec2bf1018cf755d5e&oe=5A447EFD);
+	background-size: 100%;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.left-name{
+	display: inline-block;
+}
+
+.left-content .left-menu-item{
+	padding: 10px;
+}
+
+.left-content .left-menu-item:hover{
+	background-color: #F6F7F9;
+}
+
+.main-content{
+	width: 50%;
+	font-size: 12px;
+	/*background-color: #fff;*/
+}
+
+.top-content{
+	background-color: white;
+	border-radius: 5px;
+}
+
+.top-content{
+
+}
+
+.top-top li{
+	display: inline-block;
+
+}
+
+.top-top li > div{
+	display: inline-block;
+}
+
+.make-post-img{
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png');
+	height: 16px;
+	width: 16px;
+	background-size: 500px 83px;
+	background-position: -161px -49px;
+	/*border-radius: 50%;*/
+}
+
+
+.right-content{
+	width: 25%;
+	background-color: #fff;
+}
+
+https://app.schoology.com/system/files/attachments/files/m/201709/course/1212926810/fb_sprite_59c124bb1c124.png
+https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png
