@@ -1,17 +1,101 @@
 body{
+	margin: 0;
+}
+#header{
+	position: absolute;
+	right: 0;
+}
+.top{
+	margin: 0 10px 0 10px;
+}
+.bar{
+	width: 584px;
+	height: 40px;
+	margin: auto;
+}
+.buttons{
+	margin-top: 30px;
+}
+.button{
+	background-color: rgb(244, 244, 244);
+	color: #666;
 }
 
 #google-wrapper{
 	text-align: center;
 	height: 100vh; /*Guarantees entire height of the viewport.*/
 	position: relative; /*So footer can be absolute.*/
+	font-family: Arial, sans-serif;
 }
 
+#content{
+	position: absolute;
+	top: 198px;
+	/*margin-left: 425px;*/
+	left: 50%; /*This moves the left part of the content box to the center.*/
+	margin-left: -295px; /*This moves the left part back hald of the width of the content box*/
+}
+
+.logo{
+	height: 92px;
+	width: 272px;
+}
+.search-bar{
+ 	position: relative;
+ 	margin-top: 10px;
+ }
+.mic{
+	/*position: absolute;*/
+}
+.mic-img{
+	max-width: 2.5%;
+	position: absolute;
+	right: 23px;
+	top: 15px;
+}
 ul, ol{
 	list-style: none;
 }
 
 #footer{
+	background-color: rgb(242, 242, 242);
 	position: absolute;
 	bottom: 0;
+	width: 100%;
+	color: #666;
+	/*padding: 12px;*/
+	/*line-height: 40px;*/
+}
+
+.footer-left{
+	left: 0;
+	width: 49%;
+	display: inline-block;
+	text-align: left;
+}
+
+.footer-right{
+	right: 0;
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+}
+
+.menu-item{
+	display: inline-block;
+	font-size: small;
+	margin: 0 15px 0 15px;
+}
+
+.adv{
+	margin-left: 0;
+}
+
+.left-footer{
+	padding: 0;
+}
+
+ul{
+	padding: 0;
+	margin: 9px;
 }
