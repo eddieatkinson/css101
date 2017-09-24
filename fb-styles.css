@@ -108,6 +108,13 @@ ul,ol{
 	/*background-color: #fff;*/
 }
 
+.your-status>input{
+	height: 86px;
+	width: 99%;
+	border: none;
+	font-size: 14px
+}
+
 .top-content{
 	background-color: white;
 	border-radius: 5px;
@@ -133,6 +140,18 @@ ul,ol{
 	background-size: 500px 83px;
 	background-position: -161px -49px;
 	/*border-radius: 50%;*/
+}
+
+.photo-video{
+	display: inline-block;
+	border-radius: 23%;
+	background-color: #F6F7F9;
+	padding: 5px;
+	margin: 5px;
+}
+
+.photo-video:hover{
+	background-color: #DDDFE2;
 }
 
 
