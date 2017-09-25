@@ -137,9 +137,25 @@ ul,ol{
 	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png');
 	height: 16px;
 	width: 16px;
-	background-size: 500px 83px;
-	background-position: -161px -49px;
+	/*background-size: 500px 83px;*/
+	background-position-y: 109px;
 	/*border-radius: 50%;*/
+}
+
+.photo-album-img{
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png');
+	height: 16px;
+	width: 16px;
+	background-position-y: 88px;
+	background-size: 150%;
+}
+
+.live-video-img{
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png');
+	height: 11px;
+	width: 16px;
+	background-position-y: -443px;
+	background-size: 100%;
 }
 
 .photo-video{
@@ -154,11 +170,24 @@ ul,ol{
 	background-color: #DDDFE2;
 }
 
+.three-dots{
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png');
+	background-position-y: -443px;
+	background-size: 100%;
+}
+
+.feed{
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	height: 600px;
+}
 
 .right-content{
 	width: 25%;
 	background-color: #fff;
 }
+
 
 https://app.schoology.com/system/files/attachments/files/m/201709/course/1212926810/fb_sprite_59c124bb1c124.png
 https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/sgmY6l1vki2.png

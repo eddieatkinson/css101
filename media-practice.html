@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		@Media Queries
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+
+	<style type="text/css" media="screen">
+	/*	#the-box{
+			background-color: red;
+			height: 300px;
+			width: 300px;
+		}
+
+		@media screen and (max-width: 1000px){
+			#the-box{
+				background-color: blue;
+			}
+			body{
+				background-color: red;
+			}
+		}
+
+			@media screen and (max-width: 600px){
+		#the-box{
+			background-color: green;
+		}
+		body{
+		}
+	}*/
+		.container{
+			position: relative;
+		}
+
+		#top-menu{
+			background-color: purple;
+			height: 200px;
+		}
+
+		#left-menu li.menu-item{
+			height: 100px;
+			background-color: blue;
+			margin-top: 10px;
+		}
+
+		@media screen and (min-width: 768px){
+			#left-menu{
+				float: left;
+				width: 20%;
+			}
+		}
+
+		#content{
+			height: 500px;
+			/*position: relative;*/
+		}
+
+		#super-menu{
+			height: 200px;
+			background-color: blue;
+		}
+
+		@media screen and (min-width: 1100px){
+			#super-menu{
+				float: right;
+				width: 20%;
+
+			}
+		}
+
+		.pin-to-bottom{
+			position: absolute;
+			bottom: 0;
+			left: 0; /*To be thorough.*/
+			width: 100%;
+		}
+
+		#footer{
+			height: 50px;
+			background-color: blue;
+			margin-top: 10px;
+		}
+
+	</style>
+
+</head>
+<body>
+<!-- 	<div id="the-box">
+	</div> -->
+	<div class="container">
+		<div id="top-menu"></div>
+
+		<div id="left-menu">
+			<ul>
+				<li class="menu-item"></li>
+				<li class="menu-item"></li>
+				<li class="menu-item"></li>
+				<li class="menu-item"></li>
+			</ul>
+		</div>
+		<div id="content"></div>
+		<div id="super-menu"></div>
+			<div id="footer"></div>
+		</div>
+	</div>
+
+</body>
+</html>
